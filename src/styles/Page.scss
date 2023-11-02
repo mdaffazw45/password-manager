@@ -1,0 +1,70 @@
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+  
+  .toggle-bar-category {
+    font-size: 20px;
+    z-index: 999;
+    margin-top: 30px;
+
+  }
+  
+  .table-utama {
+    width: 100%;
+    margin: 0;
+    overflow-y: scroll;
+    max-height: 400px;
+    min-height: 400px;
+  }
+  
+  .isi-konten {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-left: 10%;
+    max-height: max-content;
+    width: 70%;
+    flex-direction: row; /* Set the direction to row */
+  }
+
+  .isi-konten-kiri {
+    max-height: 70%;
+    max-width: 70%;
+  }
+
+  .isi-konten-kanan {
+    max-height: 30%;
+    max-width: 30%;
+    align-items: flex-end;
+    
+  }
+  
+  .form-isian {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .form-isi {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+  
+  .form-isi input {
+    margin-bottom: 10px; /* Add margin between input elements */
+  }
+  
+  .label {
+    font-family: Arial;
+    display: block;
+  }
+  
+  /* Define styles for the button */
+  .button {
+    border: 2px solid red;
+  }

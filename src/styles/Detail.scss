@@ -1,0 +1,14 @@
+.detail-box {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 250px;
+    margin-left: 600px;
+    border-radius: 15px;
+    max-height: max-content;
+    max-width: max-content;
+    border: 2px solid black;
+}
