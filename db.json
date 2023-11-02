@@ -50,18 +50,11 @@
       "id": 9
     },
     {
-      "provider": "test",
-      "email": "test@gmail.com",
-      "password": "test2",
-      "category": "work",
-      "id": 10
-    },
-    {
-      "provider": "test",
-      "email": "test@gmail.com",
-      "password": "test2",
+      "provider": "phincon3.com",
+      "email": "baksobakar@gmail.com",
+      "password": "ayambakso",
       "category": "personal",
-      "id": 11
+      "id": 12
     }
   ]
 }

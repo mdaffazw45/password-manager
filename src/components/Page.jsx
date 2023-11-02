@@ -6,7 +6,7 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import { useParams, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
@@ -85,6 +85,12 @@ const Page = () => {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+
+    // Check if the password is less than 6 characters
+    if (password.length < 6) {
+    alert("Password must be at least 6 characters.");
+    return; // Don't proceed with the submission
+    }
     
     try {
       const data = {
@@ -159,7 +165,7 @@ const Page = () => {
                       </TableCell>
                       <TableCell align="right">{post.provider}</TableCell>
                       <TableCell align="right">{post.email}</TableCell>
-                      <TableCell align="right">{post.password} </TableCell>
+                      <TableCell align="right">  {post.password.replace(/./g, '*')}</TableCell>
                       <TableCell align="right">{post.category}</TableCell>
                       <TableCell align="right">
                         <div style={{ display: "flex", alignItems: "center" }}>
@@ -209,8 +215,8 @@ const Page = () => {
                   Password:
                 </label>
                 <input
-                  type="text"
                   name="password"
+                  type="password" 
                   value={formData.password}
                   placeholder="Password"
                   onChange={handleFormChange}
