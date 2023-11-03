@@ -68,3 +68,25 @@
   .button {
     border: 2px solid red;
   }
+
+  @media (max-width: 600px) {
+    .isi-konten {
+      display: flex;
+      flex-direction: column; /* Set the direction to row for small screens */
+      margin-top: 100px; /* Adjust margin-top as needed for small screens */
+      width: 90%; /* Adjust the width as needed for small screens */
+    }
+  
+    .isi-konten-kiri {
+      overflow-x: scroll;
+      max-height: 100%; /* Adjust the height as needed for small screens */
+      max-width: 100%; /* Adjust the width as needed for small screens */
+    }
+  
+    .isi-konten-kanan {
+      margin-top: 40px;
+      max-height: 100%; /* Adjust the height as needed for small screens */
+      max-width: 100%; /* Adjust the width as needed for small screens */
+    }
+  }
+  

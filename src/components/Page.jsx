@@ -52,8 +52,13 @@ const Page = () => {
   const handleDelete = (id) => {
     deletePost(id)
       .then(() => {
-        setMeals(prevPosts => prevPosts.filter(post => post.id !== id));
-        window.confirm("Are you sure?")
+        setPosts(prevPosts => prevPosts.filter(post => post.id !== id));
+        alert("Delete Berhasil Dilakukan");
+
+        fetchFavorite().then(data => {
+            setPosts(data);
+            console.log("Hasil",posts);
+          })
       })
       .catch(error => {
         // Handle the error here if necessary

@@ -12,3 +12,12 @@
     max-width: max-content;
     border: 2px solid black;
 }
+
+@media (max-width: 600px) {
+    .detail-box {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-top: 200px; /* Adjust top margin for smaller screens */
+        margin-left: 10px; /* Adjust left margin for smaller screens */
+        max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+}

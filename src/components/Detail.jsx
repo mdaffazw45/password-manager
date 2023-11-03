@@ -36,6 +36,7 @@ const Detail = () => {
           <p>Category : {posts.category}</p>
           </div>
           <Button onClick={handleBackClick}>&larr; Back</Button>
+          <Button onClick={handleBackClick}> Update</Button>
     </div>
   )
 }

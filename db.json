@@ -1,13 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "provider": "phincon.com",
-      "email": "mail@phincon.com",
-      "password": "Bethebest123",
-      "category": "work"
-    },
-    {
       "id": 2,
       "provider": "phincon.com",
       "email": "mail@phincon.com",
@@ -41,13 +34,6 @@
       "password": "Bethebest22123",
       "category": "work",
       "id": 6
-    },
-    {
-      "provider": "test",
-      "email": "test@gmail.com",
-      "password": "test2",
-      "category": "work",
-      "id": 9
     },
     {
       "provider": "phincon3.com",
